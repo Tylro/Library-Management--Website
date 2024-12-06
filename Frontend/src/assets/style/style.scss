@@ -1,0 +1,73 @@
+@import "./colorScheme";
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // align-content: center;
+    flex-direction: column;
+
+}
+
+@mixin flexEnd($direction) {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: $direction;
+
+}
+
+.card-shadow {
+    box-shadow: 0px -100px 100px #000000 inset;
+}
+
+.flex-center {
+    @include flexCenter()
+}
+
+.flex-end-col {
+    @include flexEnd(column)
+}
+
+.flex-end-row {
+    @include flexEnd(row)
+}
+
+.lighter-text {
+    color: $lighter !important;
+}
+
+.light-text {
+    color: $light !important;
+}
+
+.dark-text {
+    color: $dark !important;
+}
+
+.darker-text {
+    color: $darker !important;
+}
+
+.darkest-text {
+    color: $darkest !important;
+}
+
+.lighter-background {
+    background-color: $lighter !important;
+}
+
+.light-background {
+    background-color: $light !important;
+}
+
+.dark-background {
+    background-color: $dark !important;
+}
+
+.darker-background {
+    background-color: $darker !important;
+}
+
+.darkest-background {
+    background-color: $darkest !important;
+}
